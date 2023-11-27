@@ -28,6 +28,21 @@ export class TransactionService {
         return await this.transactionRepository.save(transaction)
     }
 
+    async findAllByType(userId: number, type: string): Promise<number> {
+        const transactions: Transaction[] = await this.transactionRepository.find({
+            where: {
+                user: {
+                    id: userId,
+                },
+                type: type,
+            }
+        })
+
+        const total: number = transactions.reduce<number>((acc, item) => acc + item.amount, 0)
+
+        return total
+    }
+
     async findAllWithPagination(userId: number, page: number, limit: number): Promise<Transaction[]> {
         return await this.transactionRepository.find({
             where: {
