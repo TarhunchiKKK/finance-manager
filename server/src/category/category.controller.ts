@@ -34,19 +34,19 @@ export class CategoryController {
         return this.categoryService.findAll(+request.user.id)
     }
 
-    @Get(':type/:id')
+    @Get(':id')
     @UseGuards(JwtAuthGuard, CategoryAuthorGuard)
     findOne(@Param('id') id: string) {
         return this.categoryService.findOne(+id)
     }
 
-    @Patch(':type/:id')
+    @Patch(':id')
     @UseGuards(JwtAuthGuard, CategoryAuthorGuard)
     update(@Param('id') id: string, @Body() updateCategoryDto: UpdateCategoryDto) {
         return this.categoryService.update(+id, updateCategoryDto)
     }
 
-    @Delete(':type/:id')
+    @Delete(':id')
     @UseGuards(JwtAuthGuard, CategoryAuthorGuard)
     remove(@Param('id') id: string) {
         return this.categoryService.remove(+id)
