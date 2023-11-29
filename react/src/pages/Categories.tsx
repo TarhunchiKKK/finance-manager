@@ -41,7 +41,6 @@ export const catgoryLoader = async () => {
 
 const Categories: FC = () => {
     const categories = useLoaderData() as ICategory[]
-    console.log(categories)
 
     const [createModal, setCreateModal] = useState<boolean>(false)
     const [editModal, setEditModal] = useState<boolean>(false)

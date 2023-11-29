@@ -18,10 +18,10 @@ const CategoryModal: FC<Props> = ({ type, categoryId, close }) => {
                 </label>
 
                 <div className="flex items-center gap-2">
-                    <button  className="btn btn-green" type='submit'>
+                    <button className="btn btn-green" type='submit'>
                         { type === 'patch' ? 'Save' : 'Create'}
                     </button>
-                    <button className="btn btn-red" >Close</button>
+                    <button onClick={() => close()} className="btn btn-red" >Close</button>
                 </div>
             </Form>
         </div>

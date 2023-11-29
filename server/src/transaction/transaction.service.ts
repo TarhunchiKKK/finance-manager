@@ -19,7 +19,7 @@ export class TransactionService {
                 id: userId,
             },
             category: {
-                id: +createTransactionDto.category.id,
+                id: +createTransactionDto.category,
             }
         }
 
@@ -68,6 +68,9 @@ export class TransactionService {
                 user: {
                     id: userId,
                 }
+            },
+            relations: {
+                category: true,
             },
             order: {
                 createdAt: 'DESC',

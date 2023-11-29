@@ -34,7 +34,7 @@ export class Transaction {
     @JoinColumn({ name: 'user_id' })
     user: User
 
-    @ManyToOne(() => Category, (category: Category) => category.transactions)
+    @ManyToOne(() => Category, (category: Category) => category.transactions, { onDelete: 'SET NULL' })
     @JoinColumn({ name: 'category_id' })
     category: Category
 }
