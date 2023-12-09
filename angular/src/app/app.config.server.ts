@@ -1,11 +1,10 @@
 import { mergeApplicationConfig, ApplicationConfig } from '@angular/core';
 import { provideServerRendering } from '@angular/platform-server';
 import { appConfig } from './app.config';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { provideHttpClient, withFetch } from '@angular/common/http';
 
 const serverConfig: ApplicationConfig = {
-    providers: [provideServerRendering()],
-    // imports: [FontAwesomeModule]
+    providers: [provideServerRendering(), provideHttpClient(withFetch())],
 };
 
 export const config = mergeApplicationConfig(appConfig, serverConfig);

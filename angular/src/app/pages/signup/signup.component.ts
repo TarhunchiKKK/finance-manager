@@ -7,18 +7,21 @@ import {
     ReactiveFormsModule,
     Validators,
 } from '@angular/forms';
+import { AuthService } from '../../services/auth.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @Component({
     selector: 'app-signup',
     standalone: true,
     imports: [FormsModule, ReactiveFormsModule, NgIf],
+    providers: [AuthService],
     templateUrl: './signup.component.html',
     styleUrl: './signup.component.scss',
 })
 export class SignupComponent {
     userData: FormGroup;
 
-    constructor() {
+    constructor(private readonly authService: AuthService) {
         this.userData = new FormGroup({
             email: new FormControl('', [Validators.required, Validators.email]),
             password: new FormControl('', [
@@ -30,7 +33,7 @@ export class SignupComponent {
 
     onSubmit() {
         if (this.userData.valid) {
-            console.log(this.userData.value);
+            this.authService.signUp(this.userData.value)
         } else {
             console.log('Invalid');
         }
