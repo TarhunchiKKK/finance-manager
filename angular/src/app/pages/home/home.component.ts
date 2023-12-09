@@ -4,12 +4,14 @@ import { TransctionsTableComponent } from '../../components/transctions-table/tr
 import { TransctionsFormComponent } from '../../components/transctions-form/transctions-form.component';
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [CategoriesComponent, TransctionsTableComponent, TransctionsFormComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+    selector: 'app-home',
+    standalone: true,
+    imports: [
+        CategoriesComponent,
+        TransctionsTableComponent,
+        TransctionsFormComponent,
+    ],
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.scss',
 })
-export class HomeComponent {
-
-}
+export class HomeComponent {}

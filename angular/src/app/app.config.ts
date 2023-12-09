@@ -6,6 +6,5 @@ import { provideClientHydration } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes), provideClientHydration()],
-  
+    providers: [provideRouter(routes), provideClientHydration()],
 };

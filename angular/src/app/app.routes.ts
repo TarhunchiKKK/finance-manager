@@ -8,24 +8,24 @@ export const routes: Routes = [
     {
         path: '',
         component: HomeComponent,
-        title: 'Home'
+        title: 'Home',
     },
     {
         path: 'login',
-        component: LoginComponent
+        component: LoginComponent,
     },
     {
         path: 'signup',
-        component: SignupComponent
+        component: SignupComponent,
     },
     {
         path: 'profile',
-        component: ProfileComponent
+        component: ProfileComponent,
     },
     // остальные роуты буудут перенаправлены на home
     {
         path: '**',
         component: HomeComponent,
-        redirectTo: ''
-    }
+        redirectTo: '',
+    },
 ];

@@ -9,9 +9,9 @@ import { NgIf } from '@angular/common';
     standalone: true,
     imports: [FontAwesomeModule, RouterLink, RouterLinkActive, NgIf],
     templateUrl: './header.component.html',
-    styleUrl: './header.component.scss'
+    styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-    isAuth = false
-    logoutIcon = faArrowRightFromBracket
+    isAuth = false;
+    logoutIcon = faArrowRightFromBracket;
 }
