@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply text-neutral-900;
+    }
+
+    td {
+        @apply px-4 py-2 text-sm;
+    }
+}
+
+@layer components {
+    .input {
+        @apply rounded-sm text-sm border-transparent bg-slate-700 p-2 outline-none border focus:border-blue-500; 
+    }
+    .btn {
+        @apply text-sm px-4 py-2 rounded-sm text-white transition-colors;
+    }
+}
+
+@layer utilities {
+    .btn-green {
+        @apply bg-green-600 hover:bg-green-700;
+    }
+    .btn-red {
+        @apply bg-red-600 hover:bg-red-500;
+    }
+}
