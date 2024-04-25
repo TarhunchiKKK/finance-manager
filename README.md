@@ -4,35 +4,31 @@ Ths is simple online finance manager.
 
 ## Tech stack
 
-<div style="display:flex;">
-    <div>
-        <h4>Backend:</h4>
-        <ul>
-            <li>
-                <a href="https://nestjs.com/">Nest JS</a>
-            </li>
-            <li>
-                <a href="https://www.postgresql.org/">PostgreSQL</a>
-            </li>
-            <li>
-                <a href="https://jwt.io/">JWT</a>
-            </li>
-        </ul>
-    </div>
-    <div>
-        <h4>Frontend:</h4>
-        <ul>
-            <li>
-                <a href="https://react.dev/">React</a> TypeScript
-            </li>
-            <li>
-                <a href="https://redux.js.org/">Redux Toolkit</a>
-            </li>
-            <li>
-                <a href="https://tailwindcss.com/">TailwindCSS</a>
-            </li>
-        </ul>
-    </div>
+<div>
+    <h4>Backend:</h4>
+    <ul>
+        <li>
+            <a href="https://nestjs.com/">Nest JS</a>
+        </li>
+        <li>
+            <a href="https://www.postgresql.org/">PostgreSQL</a>
+        </li>
+        <li>
+            <a href="https://jwt.io/">JWT</a>
+        </li>
+    </ul>
+    <h4>Frontend:</h4>
+    <ul>
+        <li>
+            <a href="https://react.dev/">React</a> TypeScript
+        </li>
+        <li>
+            <a href="https://redux.js.org/">Redux Toolkit</a>
+        </li>
+        <li>
+            <a href="https://tailwindcss.com/">TailwindCSS</a>
+        </li>
+    </ul>
 </div>
 
 ## Startup guide
@@ -83,12 +79,8 @@ On this page you can create your own categories for income/expenses:
 Registration/login forms look like this:
 
 <div style="display:flex;gap:10px;">
-    <div>
-        <img src="./readme/login.png" alt="Login"></img>
-    </div>
-    <div>
-        <img src="./readme/regstration.png" alt="Registration"></img>
-    </div>
+    <img src="./readme/login.png" alt="Login" width="500px" height="300px"></img>
+    <img src="./readme/regstration.png" alt="Registration" width="500px" height="300px"></img>
 </div>
 
 After registration/login you will see this page:
