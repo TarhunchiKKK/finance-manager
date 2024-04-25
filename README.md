@@ -90,6 +90,6 @@ After registration/login you will see this page:
 
 ### Error page
 
-If you enter a non-existent path in the browser line, you will be taken to this page"
+If you enter a non-existent path in the browser line, you will be taken to this page:
 
 <img src="./readme/error-page.png"></img>
